@@ -1,0 +1,34 @@
+<!-- TechGuru Toolkit Form (with autoresponder + redirect) -->
+<form
+  action="https://formspree.io/f/mzzggjgv"
+  method="POST"
+>
+  <!-- Visible fields -->
+  <label>
+    Full Name:<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>
+    Email Address:<br>
+    <input type="email" name="email" required>
+  </label><br><br>
+
+  <!-- Autoresponse settings -->
+  <input type="hidden" name="_replyto" value="${email}">
+  <input type="hidden" name="_subject" value="🚀 Your TechGuru Toolkit Is Ready!">
+  <input
+    type="hidden"
+    name="_autoresponse"
+    value="Hi ${name},&#10;&#10;Thanks for grabbing your TechGuru Toolkit!&#10;👉 Download it here: https://toolkit.techguruofficial.us/TechGuru_Toolkit.pdf&#10;&#10;— Lucas, TechGuru"
+  >
+
+  <!-- Redirect to your hosted thank-you page -->
+  <input
+    type="hidden"
+    name="_next"
+    value="https://toolkit.techguruofficial.us/thank_you.html"
+  >
+
+  <button type="submit">Claim My Free Toolkit</button>
+</form>
